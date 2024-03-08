@@ -14,7 +14,7 @@ type config struct {
 
 func main() {
 	cfg := config{
-		pokeAPIClient: pokeapi.NewClient(time.Minute),
+		pokeAPIClient: pokeapi.NewClient(time.Minute, time.Hour),
 	}
 	startRepl(&cfg)
 }
